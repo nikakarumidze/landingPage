@@ -6,7 +6,7 @@ const Footer = () => {
 
   const handleScroll = useCallback(() => {
     const { clientHeight } = document.documentElement;
-    if (!visible && clientHeight >= 800) setVisible(true);
+    if (!visible && clientHeight >= 600) setVisible(true);
   }, [visible]);
 
   useEffect(() => {

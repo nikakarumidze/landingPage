@@ -18,7 +18,7 @@ const CashGames = () => {
             <PrizeList list={PrizeListData} />
             <LeaderBoard header='TOP20 ლიდერბორდი ჰოლდემში' data={leaderBoardData} />
             <PrizeList list={PrizeListData} />
-            <Stack direction='row' justifyContent='center' alignItems='center' pb={2}>
+            <Stack direction='row' justifyContent='center' alignItems='center' p={2}>
               <Typography>* ლიდერბორდის შედეგები განახლდება</Typography>
               <Typography
                 ml={0.5}

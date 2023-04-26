@@ -6,15 +6,15 @@ const offers = Array(5).fill(null);
 
 const AllOffers = () => {
   return (
-    <Box>
+    <Box pb={5} pt={2}>
       <Typography my={2}>მსგავსი აქციები</Typography>
-      <Box 
-      display='flex' 
-      flexDirection='row' 
-      overflow='auto' 
-      columnGap={2}
-      alignItems='start'
-      maxWidth='100%'
+      <Box
+        display='flex'
+        flexDirection='row'
+        overflow='auto'
+        columnGap={2}
+        alignItems='start'
+        maxWidth='100%'
       >
         {offers.map((arr, i) => (
           <OfferCard
