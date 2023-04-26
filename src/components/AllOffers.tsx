@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 import OfferCard from './OfferCard';
 
-const offers = Array(5).fill(null);
+const offers = Array(10).fill(null);
 
 const AllOffers = () => {
   return (
@@ -11,10 +11,14 @@ const AllOffers = () => {
       <Box
         display='flex'
         flexDirection='row'
-        overflow='auto'
         columnGap={2}
-        alignItems='start'
-        maxWidth='100%'
+        mx={0}
+        sx={{
+          overflowX: 'auto',
+          '&::-webkit-scrollbar': {
+            display: 'none',
+          },
+        }}
       >
         {offers.map((arr, i) => (
           <OfferCard

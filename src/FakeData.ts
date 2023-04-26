@@ -1,7 +1,8 @@
-import { IFaqData, IPrize, leaderBoardDataType } from './types';
+import { IFaqData, IPrize, ITravelCard, leaderBoardDataType } from './types';
 import AirplaneTicketIcon from '@mui/icons-material/AirplaneTicket';
 import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import FlightIcon from '@mui/icons-material/Flight';
+import moneyIcon from './assets/final-item-money-icon.png';
 
 export const leaderBoardData: leaderBoardDataType[] = Array(20).fill({
   amount: Math.floor(Math.random() * 1000),
@@ -53,3 +54,8 @@ export const FaqData: IFaqData[] = [
     description: 'lorem lrore',
   },
 ];
+
+export const TravelCardData: ITravelCard[] = Array(4).fill({
+  title: 'ორმხრივი ავიაბილეთი',
+  icon: moneyIcon,
+});

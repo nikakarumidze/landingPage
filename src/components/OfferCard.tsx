@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Card, CardActionArea, CardMedia, CardContent } from '@mui/material';
+import { Typography, Card, CardActionArea, CardMedia, CardContent, Box } from '@mui/material';
 import image from '../assets/offers-bonus.png';
 
 interface IOfferCard {
@@ -9,39 +9,23 @@ interface IOfferCard {
 
 const OfferCard: React.FC<IOfferCard> = ({ header, description }) => {
   return (
-    <Card
+    <Box
       sx={{
-        position: 'relative',
-        // width: '200px',
-        // height: '300px',
+        display: 'flex',
+        minWidth: '200px',
+        height: '250px',
+        borderRadius: '5px',
+        backgroundImage: `url(${image})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        flexDirection: 'column',
+        justifyContent:'end',
+        p: 2
       }}
     >
-      <CardActionArea sx={{ position: 'relative' }}>
-        <CardMedia
-          component='img'
-          image={image}
-          alt='card-image'
-          sx={{
-            position: 'absolute',
-            top: 0,
-            right: 0,
-            width: '100%',
-            height: '100%',
-          }}
-        />
-        <CardContent
-          sx={{
-            position: 'relative',
-            bgcolor: 'transparent',
-          }}
-        >
-          <Typography variant='body2'>
-            {header}
-          </Typography>
-          <Typography variant='body2'>{description}</Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+      <Typography variant='body1'>{header}</Typography>
+      <Typography variant='body2' mt={2}>{description}</Typography>
+    </Box>
   );
 };
 

@@ -13,6 +13,7 @@ import CashGames from './CashGames';
 import { toggleButtonValues } from '../FakeData';
 import SpringSeries from './SpringSeries';
 import Footer from './Footer';
+import FinalStage from './FinalStage';
 
 const ModalContent = forwardRef<HTMLDivElement>((props, ref) => {
   const [index, setIndex] = useState(0);
@@ -67,6 +68,7 @@ const ModalContent = forwardRef<HTMLDivElement>((props, ref) => {
         </ToggleButtonGroup>
         {!index && <CashGames />}
         {index === 1 && <SpringSeries />}
+        {index === 2 && <FinalStage />}
       </Container>
       <Footer />
     </Box>

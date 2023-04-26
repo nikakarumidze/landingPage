@@ -17,3 +17,8 @@ export interface IFaqData {
   header: string;
   description: string;
 }
+
+export interface ITravelCard {
+  title: string;
+  icon: any;
+}

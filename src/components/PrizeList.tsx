@@ -9,7 +9,16 @@ const PrizeList: React.FC<IPrizeList> = ({ list }) => {
   return (
     <Box m={2} py={0.5} bgcolor='error.light'>
       {list.map((prize, i) => (
-        <Stack key={i} direction='row' bgcolor='error.main' alignItems='center' m={2}>
+        <Stack
+          key={i}
+          direction='row'
+          bgcolor='error.main'
+          alignItems='center'
+          m={2}
+          sx={{
+            borderRadius: '10px',
+          }}
+        >
           <Box
             margin='auto'
             bgcolor='secondary.main'
@@ -22,7 +31,9 @@ const PrizeList: React.FC<IPrizeList> = ({ list }) => {
             }}
           />
           <prize.Icon size='large' sx={{ ml: 2, transform: !i ? 'rotate(45deg)' : '' }} />
-          <Typography ml={1} py={1.5}>{prize.description}</Typography>
+          <Typography ml={1} py={1.5}>
+            {prize.description}
+          </Typography>
         </Stack>
       ))}
     </Box>
