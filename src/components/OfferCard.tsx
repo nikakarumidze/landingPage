@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Card, CardActionArea, CardMedia, CardContent, Box } from '@mui/material';
+import { Typography, Box } from '@mui/material';
 import image from '../assets/offers-bonus.png';
 
 interface IOfferCard {
@@ -19,12 +19,14 @@ const OfferCard: React.FC<IOfferCard> = ({ header, description }) => {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         flexDirection: 'column',
-        justifyContent:'end',
-        p: 2
+        justifyContent: 'end',
+        p: 2,
       }}
     >
       <Typography variant='body1'>{header}</Typography>
-      <Typography variant='body2' mt={2}>{description}</Typography>
+      <Typography variant='body2' mt={2}>
+        {description}
+      </Typography>
     </Box>
   );
 };

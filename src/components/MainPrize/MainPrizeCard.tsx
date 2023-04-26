@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Stack } from '@mui/material';
-import regularEventBackground from '../assets/tournament-bg.png';
-import mainEventBackground from '../assets/main-bg.png';
+import regularEventBackground from '../../assets/tournament-bg.png';
+import mainEventBackground from '../../assets/main-bg.png';
 
 interface IMainPrizeCard {
   name: string;

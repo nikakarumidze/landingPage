@@ -1,11 +1,11 @@
 import { Box, Stack, Typography } from '@mui/material';
-import LeaderBoard from './LeaderBoard';
-import { FaqData, leaderBoardData, PrizeListData } from '../FakeData';
-import PrizeList from './PrizeList';
-import InfoCard from './InfoCard';
-import Faq from './Faq';
-import AllOffers from './AllOffers';
-import StyledBox from './StyledBox';
+import LeaderBoard from '../LeaderBoard';
+import { FaqData, leaderBoardData, PrizeListData } from '../../FakeData';
+import PrizeList from '../PrizeList';
+import InfoCard from '../InfoCard';
+import Faq from '../Faq';
+import AllOffers from '../AllOffers';
+import StyledBox from '../Utils/StyledBox';
 
 const CashGames = () => {
   return (

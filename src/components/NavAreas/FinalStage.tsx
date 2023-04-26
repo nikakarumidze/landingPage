@@ -1,12 +1,12 @@
-import { Box, CardMedia, Typography, Stack, Grid } from '@mui/material';
+import { Box, CardMedia, Typography, Stack } from '@mui/material';
 import React from 'react';
-import festivalImg from '../assets/final-info-img.jpg';
-import StyledBox from './StyledBox';
-import TravelCard from './TravelCard';
-import { FaqData, TravelCardData } from '../FakeData';
-import Faq from './Faq';
-import AllOffers from './AllOffers';
-import TicketInfo from './TicketInfo/TicketInfo';
+import festivalImg from '../../assets/final-info-img.jpg';
+import StyledBox from '../Utils/StyledBox';
+import TravelCard from '../TravelCard';
+import { FaqData, TravelCardData } from '../../FakeData';
+import Faq from '../Faq';
+import AllOffers from '../AllOffers';
+import TicketInfo from '../TicketInfo/TicketInfo';
 
 const FinalStage = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import OfferCard from './OfferCard';
 
 const offers = Array(10).fill(null);

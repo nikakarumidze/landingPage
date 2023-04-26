@@ -1,15 +1,15 @@
 import React from 'react';
-import StyledBox from './StyledBox';
+import StyledBox from '../Utils/StyledBox';
 import { Box, Typography, Stack, CardMedia, Button, Grid } from '@mui/material';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import leftCard from '../assets/promo-left-img.png';
-import rightCard from '../assets/promo-right-img.png';
-import LeaderBoard from './LeaderBoard';
-import PrizeList from './PrizeList';
-import { FaqData, PrizeListData, leaderBoardData } from '../FakeData';
-import Faq from './Faq';
-import AllOffers from './AllOffers';
-import MainPrizes from './MainPrizes';
+import leftCard from '../../assets/promo-left-img.png';
+import rightCard from '../../assets/promo-right-img.png';
+import LeaderBoard from '../LeaderBoard';
+import PrizeList from '../PrizeList';
+import { FaqData, PrizeListData, leaderBoardData } from '../../FakeData';
+import Faq from '../Faq';
+import AllOffers from '../AllOffers';
+import MainPrizes from '../MainPrize/MainPrizes';
 
 const tournamentContent = (
   <>

@@ -9,11 +9,11 @@ import {
   Stack,
 } from '@mui/material';
 import banner from '../assets/banner.jpg';
-import CashGames from './CashGames';
+import CashGames from './NavAreas/CashGames';
 import { toggleButtonValues } from '../FakeData';
-import SpringSeries from './SpringSeries';
+import SpringSeries from './NavAreas/SpringSeries';
 import Footer from './Footer';
-import FinalStage from './FinalStage';
+import FinalStage from './NavAreas/FinalStage';
 
 const ModalContent = forwardRef<HTMLDivElement>((props, ref) => {
   const [index, setIndex] = useState(0);
