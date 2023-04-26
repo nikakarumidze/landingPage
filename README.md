@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Project was build via React.js & Typescript & Material UI.
+## Deployment website:
+https://plain-landing-page.surge.sh/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
