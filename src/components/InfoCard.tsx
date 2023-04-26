@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
+
 interface IInfoCard {
   text: string;
   remark: string;
@@ -19,7 +20,12 @@ const InfoCard: React.FC<IInfoCard> = ({ text, remark }) => {
       py={2}
     >
       <Box />
-      <Typography alignItems='center'>{text}</Typography>
+      <Typography
+        alignItems='center'
+        // component='h6'
+      >
+        {text}
+      </Typography>
       <Typography alignItems='center'>{remark}</Typography>
     </Box>
   );

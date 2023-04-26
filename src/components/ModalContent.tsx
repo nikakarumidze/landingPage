@@ -11,6 +11,8 @@ import {
 import banner from '../assets/banner.jpg';
 import CashGames from './CashGames';
 import { toggleButtonValues } from '../FakeData';
+import SpringSeries from './SpringSeries';
+import Footer from './Footer';
 
 const ModalContent = forwardRef<HTMLDivElement>((props, ref) => {
   const [index, setIndex] = useState(0);
@@ -19,10 +21,13 @@ const ModalContent = forwardRef<HTMLDivElement>((props, ref) => {
       sx={{
         border: '1px solid #000',
         boxShadow: 24,
+        mb: 10,
         width: {
           xs: '100%',
-          md: '60%',
+          md: '70%',
         },
+        borderRadius: '20px',
+        overflow: 'hidden',
         backgroundColor: 'secondary.dark',
       }}
       ref={ref}
@@ -61,7 +66,9 @@ const ModalContent = forwardRef<HTMLDivElement>((props, ref) => {
           ))}
         </ToggleButtonGroup>
         {!index && <CashGames />}
+        {index === 1 && <SpringSeries />}
       </Container>
+      <Footer />
     </Box>
   );
 });

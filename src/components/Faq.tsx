@@ -1,20 +1,26 @@
 import React from 'react';
-import { Box, Typography, Accordion, AccordionSummary } from '@mui/material';
+import { Box, Typography, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { IFaqData } from '../types';
 
-const Faq: React.FC = () => {
+interface IFaq {
+  data: IFaqData[];
+}
+
+const Faq: React.FC<IFaq> = ({ data }) => {
   return (
     <Box>
-      <Typography>წესები და პირობები</Typography>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls='panel1a-content'
-          id='panel1a-header'
-        >
-          <Typography>Accordion 1</Typography>
-        </AccordionSummary>
-      </Accordion>
+      <Typography my={2}>წესები და პირობები</Typography>
+      {data.map((item, i) => (
+        <Accordion sx={{ backgroundColor: 'error.light', my: 1 }} key={i}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>{item.header}</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>{item.description}</Typography>
+          </AccordionDetails>
+        </Accordion>
+      ))}
     </Box>
   );
 };

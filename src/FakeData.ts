@@ -1,4 +1,4 @@
-import { IPrize, leaderBoardDataType } from './types';
+import { IFaqData, IPrize, leaderBoardDataType } from './types';
 import AirplaneTicketIcon from '@mui/icons-material/AirplaneTicket';
 import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import FlightIcon from '@mui/icons-material/Flight';
@@ -36,5 +36,20 @@ export const PrizeListData: IPrize[] = [
   {
     Icon: CardGiftcardIcon,
     description: 'ტექნიკის მაღაზიის ვაუჩერი',
+  },
+];
+
+export const FaqData: IFaqData[] = [
+  {
+    header: 'როდის იწყება და რა ფორმატით გაიმართება აქცია',
+    description: 'lorem lrore',
+  },
+  {
+    header: 'როგორ მივიღო აქციაში მონაწილეობა?',
+    description: 'lorem lrore',
+  },
+  {
+    header: 'სხვადასხვა',
+    description: 'lorem lrore',
   },
 ];

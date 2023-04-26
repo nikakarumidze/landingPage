@@ -8,7 +8,9 @@ export const DefaultTheme = createTheme({
       dark: '#1C1D1E',
     },
     error: {
-      main: '#202324'
-    }
+      main: '#202324',
+      light: '#25292B',
+      dark: '#171718'
+    },
   },
 });

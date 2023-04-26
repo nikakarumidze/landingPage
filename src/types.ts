@@ -12,3 +12,8 @@ export interface leaderBoardDataType {
   amount: number;
   description: string;
 }
+
+export interface IFaqData {
+  header: string;
+  description: string;
+}

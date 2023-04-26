@@ -10,6 +10,7 @@ const App = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
+          p: 0,
         }}
       >
         <ModalContent />

@@ -17,8 +17,8 @@ const LeaderBoard: React.FC<ILeaderBoard> = ({ header, data }) => {
         <Typography mr={1}>{header}</Typography>
         <InfoIcon />
       </Stack>
-      <Box sx={{ backgroundColor: 'secondary.light' }}>
-        <Stack direction='row' justifyContent='space-around' pb={1} px={0} pt={2}>
+      <Box sx={{ backgroundColor: 'secondary.light', mx: 1, borderRadius: '10px' }}>
+        <Stack direction='row' justifyContent='space-between' pb={1} px={4} pt={2}>
           <Typography>ადგილი</Typography>
           <Stack direction='row'>
             <CardGiftcardIcon />
@@ -29,11 +29,13 @@ const LeaderBoard: React.FC<ILeaderBoard> = ({ header, data }) => {
         <Stack maxHeight={400} overflow={'auto'}>
           {data.map((item, i) => (
             <Stack
+              key={i}
               direction='row'
-              justifyContent='space-around'
+              justifyContent='space-between'
               sx={{
                 backgroundColor: 'secondary.dark',
                 py: 0.5,
+                px:1,
                 mx: 1,
                 border: '2px solid',
                 borderColor: 'secondary.light',

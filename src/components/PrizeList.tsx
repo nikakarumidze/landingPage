@@ -7,19 +7,22 @@ interface IPrizeList {
 }
 const PrizeList: React.FC<IPrizeList> = ({ list }) => {
   return (
-    <Box my={2}>
+    <Box m={2} py={0.5} bgcolor='error.light'>
       {list.map((prize, i) => (
-        <Stack
-          direction='row'
-          p={2}
-          bgcolor='error.main'
-          m={1}
-          borderRadius='10px'
-          borderColor='secondary.main'
-          borderLeft='2px solid'
-        >
-          <prize.Icon size='large' sx={{ transform: !i ? 'rotate(45deg)' : '' }} />
-          <Typography ml={1}>{prize.description}</Typography>
+        <Stack key={i} direction='row' bgcolor='error.main' alignItems='center' m={2}>
+          <Box
+            margin='auto'
+            bgcolor='secondary.main'
+            sx={{
+              width: 3,
+              height: 45,
+              borderBottomRightRadius: '10px',
+              borderTopRightRadius: '10px',
+              mx: 0,
+            }}
+          />
+          <prize.Icon size='large' sx={{ ml: 2, transform: !i ? 'rotate(45deg)' : '' }} />
+          <Typography ml={1} py={1.5}>{prize.description}</Typography>
         </Stack>
       ))}
     </Box>
